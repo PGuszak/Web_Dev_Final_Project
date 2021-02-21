@@ -23,13 +23,17 @@ body{
     margin: auto;
 }
 
-.pic_container{
-    background:url('/images/OrbitBanner.png');
-    width: 390;
-    height: auto;
-    padding: 20px 30px;
-    border-radius: 15px;
-    margin: auto;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    box-shadow: 0 0 10px 0 #000;
+    }
+
+.LoginHeading{
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 
 ul.list{
