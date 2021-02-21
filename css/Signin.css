@@ -58,7 +58,8 @@ ul.list li input{
 
 .button2{
     color: red;
-    text-align: left;
+    text-decoration: underline;
+    text-align: center;
     background-color: white;
 }
 
