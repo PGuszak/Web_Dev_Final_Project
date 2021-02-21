@@ -57,13 +57,20 @@ ul.list li input{
 .submit-button{
     background-color: #aeaefc;
     color: black;
-    width: 40%;
+    width: 25%;
+}
+
+.center_btns {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .button2{
     color: red;
     text-decoration: underline;
-    text-align: center;
+    text-align: left;
     background-color: white;
 }
 
@@ -72,4 +79,18 @@ ul.list li input{
     border-radius: 10px;
 }
 
+.btn-container {
+    width: auto;
+    position: relative;
+    right: 35px;
+}
 
+#menu ul{
+    list-style: none;
+    display: inline;
+    white-space: nowrap;
+  }
+
+#menu li{
+    display: inline;
+}

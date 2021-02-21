@@ -1,0 +1,50 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: grey;
+    text-align: left;
+    }
+
+
+body{
+    background-color: #04046c;
+    padding-top: 25vh; 
+}
+
+.form_container{
+    width: 390px;
+    height: auto;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #000;
+    margin: auto;
+}
+
+
+ul.list{
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.list li{
+    width: 250px;
+    margin-bottom: 12px;
+}
+
+ul.list li input{
+    width: 250px;
+    text-align: left;
+    padding: 7px 0px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 #000;
+}
+
+.submit-button{
+    background-color: #aeaefc;
+    color: black;
+    width: 40%;
+}

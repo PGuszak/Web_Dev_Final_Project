@@ -1,4 +1,10 @@
 <!--THIS IS MINE TO DO-->
+<!--
+Need a cancel button!!!!!!!
+
+<li class="list-inline"><input style="width: 30%" type="button" class=" btn-inline submit-button"  name="submit" value="Sign In"></li>
+<li class="list-inline"><input style="width: 30%" type="reset" class=" reset submit-button btn-in" name="Reset" value="Reset"></li>
+-->
 <!DOCTYPE html>
 <hmtl lang="en">
 	<head>
@@ -19,23 +25,36 @@
 				<img src="/images/OrbitBanner.png" alt="Lights" class="center">
 			</div>
 			
-			<ul class ="list">
-				<li><h2 class="LoginHeading">Account Login</h2></li>
-				<li class="input"><input type="text" name="username" placeholder="Username"></li>
-				<li class="input"><input type="password" name="password" placeholder="Password"></li>
-				<li ><input style="width: 30%" type="button" class="submit-button"  name="submit" value="Sign In"></li>
-				<li class="w-auto">
-					<div class="w-auto form-group row">
-						<div class="col-md-10">
-							<input type="checkbox" class="col-md-1">
-								<span>Remember me</span>
-						</div>
-					</div>  
-				</li>
-				<li>
-					<input style="width: 50%" type="button" class="button2" value="Forgot password"> 
-				</li>
-			</ul>
+			<form>
+				<ul class ="list">
+					<li><h2 class="LoginHeading">Account Login</h2></li>
+					<li class="input"><input type="text" name="username" placeholder="Username" required></li>
+					<li class="input"><input type="password" name="password" placeholder="Password"></li>
+
+					<div class="btn-container " id="menu">
+						<ul>
+							<li class="list-inline">
+								<input style="width: 30%" type="submit" class="btn-inline submit-button"  name="submit" value="Sign In">
+							</li>
+							<li class="list-inline">
+								<input style="width: 30%" type="reset" class="submit-button btn-inline" name="Reset" value="Reset">
+							</li>
+						</ul>
+					</div>
+			
+					<li class="w-auto">
+						<div class="w-auto form-group row">
+							<div class="col-md-10">
+								<input type="checkbox" class="col-md-1">
+									<span style="padding-left: 5px">Remember me</span>
+							</div>
+						</div>  
+					</li>
+					<li>
+						<input style="width: 50%" type="button" class="button2" value="Forgot password"> 
+					</li>
+				</ul>
+			</form>
 		</div>
 
 
