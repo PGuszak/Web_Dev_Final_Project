@@ -1,3 +1,4 @@
+/* General Structure stuff*/
 .footer {
     position: fixed;
     left: 0;
@@ -7,14 +8,13 @@
     text-align: left;
     }
 
-
 body{
     background-color: #04046c;
-    padding-top: 25vh; 
+    padding-top: 18vh; 
 }
 
 .form_container{
-    width: 390px;
+    width: 600px;
     height: auto;
     padding: 20px 30px;
     background-color: white;
@@ -23,7 +23,39 @@ body{
     margin: auto;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    box-shadow: 0 0 10px 0 #000;
+}
 
+/*controls image size*/
+img.resize {
+    max-width:300px;
+    max-height:175px;
+  }
+
+
+/*user entry boxes */
+.entrybox{
+    border:none; 
+    border-radius: 10px;
+    padding: 7px 0px;
+    text-align: center; 
+    box-shadow: 0 0 3px 0 #000;
+}
+
+.centertext{
+    display: table-cell;
+    vertical-align: center;
+    line-height: 2.5em;
+}
+
+
+
+/*sign in and reset*/
 ul.list{
     list-style-type: none;
     text-align: center;
@@ -36,15 +68,39 @@ ul.list li{
 
 ul.list li input{
     width: 250px;
-    text-align: left;
+    text-align: center;
     padding: 7px 0px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 3px 0 #000;
 }
 
 .submit-button{
     background-color: #aeaefc;
     color: black;
-    width: 40%;
+    width: 25%;
+}
+
+.center_btns {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.btn-container {
+    width: auto;
+    position: relative;
+    right: 35px;
+}
+
+
+/* ID's for formatting buttons*/
+#menu ul{
+    list-style: none;
+    display: inline;
+    white-space: nowrap;
+  }
+
+#menu li{
+    display: inline;
 }
