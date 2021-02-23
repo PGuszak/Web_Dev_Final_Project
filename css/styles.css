@@ -10,44 +10,22 @@
 
 /* || General styles */
 html {
-    background-color: #04046c;
+    background-color: #23272A;
 }
 
 body{
-    background-color: #04046c;
+    background-color: #23272A;
 }
 
 footer {
     color: white;
-    background-color: #04046c;
+    background-color: #23272A;
 }
 
 .userProfileHeader {
     background-color: #212D94;
-    width:80vw !important;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.userInfoTabsLeft{
-    background-color: #212D94;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-}
-
-.userInfoTabsRight{
-    background-color: #212D94;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-}
-
-.userInfoRows {
-    margin: auto;
-    width:80vw !important;
-    height:20vh !important; 
-    margin-top: 10px;
+    width:70vw !important;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -57,6 +35,42 @@ footer {
 }
 
 
+/* || user info tabs styling */
+.userInfoRowsIconBar{
+    margin: auto;
+    width:70vw !important;
+}
+
+.userInfoRowsContent{
+    background-color: #212D94;
+    padding: 10px;
+
+}
+
+.userInfoRowsText{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #7289DA;
+}
+
+
+
+
+
+.userInfoRowsSingle {
+    margin: auto;
+    width:70vw !important;
+    height:20vh !important; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #212D94;
+}
+
+
+.iconsGeneral {
+    color:white;
+}
 
 .userName {
     color: white;
