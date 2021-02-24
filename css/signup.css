@@ -94,7 +94,12 @@ ul.list li input{
 }
 
 
-/* ID's for formatting buttons*/
+/*IDs for buttons*/
+
+.span_header{
+    font-size: 50px;
+}
+
 #menu ul{
     list-style: none;
     display: inline;

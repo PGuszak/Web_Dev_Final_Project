@@ -1,13 +1,5 @@
-<!--THIS IS MINE TO DO-->
-<!--
-
-Date-of-birth: Required, Hint: use “date” type
-
-Security question: Required (A combo box with at least 3 security questions)
-Input for security question response
--->
 <!DOCTYPE html>
-<hmtl lang="en">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
         <title>Orbit Sign Up</title>
@@ -24,13 +16,13 @@ Input for security question response
 		<form>
 			
 			<div class="form_container">
-				<div style="text-align:center; padding-bottom: 15px;">
+				<div style="text-align:center; padding-bottom: 10px;">
 					<img src="/images/OrbitBanner.png" alt="Lights" class="center resize">
 				</div>
 				
 				<div style="text-align:center; padding-bottom: 30px;">
-					<font size="45">Create Account</font>
-					<br><p7 style="text-align:center">Fill in the following:</p7>
+					<span class="span_header">Create Account</span>
+					<br>Fill in the following:
 				</div>
 
 				<!--First and Last-->
@@ -92,7 +84,7 @@ Input for security question response
 					<!--Confirm Pass-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<input type="password" id="confirmPassword" name="confirmPassword" class="form-control entrybox"
-						placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 						onchange="this.setCustomValidity(this.validity.patternMismatch ?
 						'Your passwords do not match' : '');" placeholder="Verify Password"/>
 					</div>
@@ -117,8 +109,6 @@ Input for security question response
 					</div>
 
 				</div>  
-						
-
 
 				<!--Security Questions-->
 				<div>
@@ -178,7 +168,7 @@ Input for security question response
 				<div>
 					<ul class ="list">
 						<div class="btn-container" id="menu">
-							<ul>
+							<ul  class ="list">
 								<li>
 									<input style="left: -50px; width: 18%" type="submit" class="btn-inline submit-button"  name="Signup" value="Sign Up">
 								</li>
