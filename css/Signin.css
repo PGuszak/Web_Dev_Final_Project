@@ -33,6 +33,7 @@ body{
 .LoginHeading{
     padding-top: 25px;
     padding-bottom: 15px;
+    font-size: 38px;
 }
 
 ul.list{
@@ -68,6 +69,13 @@ ul.list li input{
 
 .button2{
     color: red;
+    text-decoration: underline;
+    text-align: left;
+    background-color: white;
+}
+
+.signupbutton {
+    color: blue;
     text-decoration: underline;
     text-align: left;
     background-color: white;

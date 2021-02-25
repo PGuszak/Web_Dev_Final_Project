@@ -1,0 +1,114 @@
+/*Nav bar stuff*/
+.nav-sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-custom {
+    background-color: #212D94;
+}
+
+.navbar-custom .navbar-text {
+    color: white;
+}
+
+body {
+    background-color: #23272A;
+    padding-bottom: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: grey;
+    text-align: left;
+    }
+
+.form_container{
+    padding-top: 10px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+.main{
+    width: 80%;
+    float: left;
+}
+
+.flex-container {
+    display: flex;
+    min-height: 100%;
+    padding-top: 10px;
+}
+
+/*both of them*/
+.flex-child {
+    flex: 1;
+    height: 100%;
+    border: 2px solid #23272A;
+    top:0;
+    position:relative;
+    
+    /*make transparent
+    background: #23272A;
+    width: 100%;
+     transparent - need hasLayout for ie ( zoom: 1; ) I have width set above 
+    filter: alpha(opacity=70);
+    opacity: 0.7;*/
+}
+
+/* left column*/
+.flex-child:first-of-type{
+    top: 1.5%;
+    height: 90vh;
+    margin-right: 20px;
+    margin-left: 15%;
+}
+
+
+.make_post_container{
+    height: 4vh;
+    background-color: silver;
+    color:black;
+    border-radius: 15px;
+}
+
+.scroll_post_container{
+    background-color: silver;
+    border-radius: 15px;
+    height: 40vh;
+}
+
+.textclear{
+    filter: alpha(opacity=100);
+    opacity: 1.0;
+}
+
+.comments_box{
+    position: relative;
+    background-color: teal;
+    bottom: 0;
+    left: 2;
+}
+
+
+/*right column*/
+.flex-child:last-child{
+    top: 12.5%;
+    height: 40vh;
+    margin-right: 15%;
+    
+}
+
+.setting_btn{
+    color:Black;
+    height: 50px;
+    width: 60px;
+}
+
+
