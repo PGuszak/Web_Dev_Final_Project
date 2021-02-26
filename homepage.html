@@ -38,7 +38,6 @@
                     </li>
                 </ul>
 
-
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
@@ -49,32 +48,107 @@
 
     <body>
         <div class="flex-container w-row " style="height: 93vh;">
+            
+            <!--Left Column-->
+            <div class="flex-child form_container w-col col-lg-2">
 
-            <!--Posts scroll box-->
+            </div>
+
+            <!--middle column-->
             <div class="flex-child form_container w-col col-lg-10 col-md-12 col-sm-12">
-                <div class="make_post_container">
-                    nul
+
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="card cardUserPost">
+                        <div class="card-header text-center">
+                            Create Post
+                        </div>
+                        <div class="card-body">
+                            <textarea class="form-control" id="message" rows="1"
+                                placeholder="What are you thinking?"></textarea>
+                            <form class="mt-2 mb-2" action="/action_page.php">
+                                <input type="file" id="myFile" name="filename">
+                            </form>
+                            <hr class="hrLineCreatePost">
+                            <a href="#" class="btn btn-primary btn-block shareButton">Share</a>
+                        </div>
+                    </div>
+        
                 </div>
 
-                <div class="scroll_post_container">
+                
+                <div class="scroll_post_container ">
+                    <body>
+
+                        <div class="container-fluid d-flex justify-content-center">
+                            <div class="card cardGeneralPost">
+                                <div class="card-header text-start">
+                                    <div>
+                                        Gabriel Jones
+                                    </div>
+                                    <div>
+                                        2/25/2021
+                                    </div>
+                                </div>
+                
+                                <div class="card-body">
+                
+                
+                                    <p class="card-text">
+                                        When life gives you lemonade, make lemons
+                                    </p>
+                
+                                    <div class="d-flex justify-content-center">
+                                        <img src="images/userPosts/coral1.jpg" width="480px" height="480px" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                
+                                <div class="card-footer d-flex justify-content-center">
+                                    <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
+                                    <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                                    <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                
+                        <div class="container-fluid d-flex justify-content-center">
+                            <div class="card cardGeneralPost">
+                                <div class="card-header text-start">
+                                    <div>
+                                        Paul Guszak
+                                    </div>
+                                    <div>
+                                        2/25/2021
+                                    </div>
+                                </div>
+                
+                                <div class="card-body">
+                
+                
+                                    <p class="card-text">
+                                        Im having an allergic reaction to pain
+                                    </p>
+                                </div>
+                
+                                <div class="card-footer d-flex justify-content-center">
+                                    <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
+                                    <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                                    <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                    </body>
+
+
+
+
+
                     
-                    <!--Picture Container-->
-                    <div>
-                        Picture here
-                    </div>
-
-                    <!--Buttons for like save share etc-->
-                    <div>
-                        list of buttons for actions
-                    </div>
-
-                    <!--Comments box and button--> 
-                    <div class="comments_box">
-                        comments box
-                    </div>
                 </div>
             </div>
-            
+
             <!--Profile box (right)-->
             <div class="flex-child form_container w-col col-lg-2">
                 <div class="flex-container w-row">
@@ -85,7 +159,6 @@
                             <li>
                                 Profile image button
                             <li><br><br>
-                            <li>Friends List<li>
                         </ul>
                     </div>
                     
@@ -105,8 +178,11 @@
         
                 </div>
             </div>
-          </div>
-       
+        </div>
+
+
+
+
     </body>
 
 
