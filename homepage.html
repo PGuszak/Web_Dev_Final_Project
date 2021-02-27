@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <hmtl lang="en">
     <title>Orbit Home Page</title>
+
     <head>
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -47,18 +48,94 @@
     </head>
 
     <body>
-        <div class="flex-container w-row " style="height: 93vh;">
-            
-            <!--Left Column-->
-            <div class="flex-child form_container w-col col-lg-2">
+
+
+
+        <div class="row d-flex mainDiv">
+
+
+            <div class="col-lg-4 d-flex justify-content-center">
+
+                <div class="card toolBoxGeneral d-none d-lg-block ">
+
+                    <div class="card-header">
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 ">
+                            Cesar's ToolBox
+                        </div>
+
+                    </div>
+
+                    <div class="card-body">
+                        <div class="row border">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+                                <i class="fas fa-camera-retro fa-3x"></i>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-self-center">
+                                My Gallary
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-5 border">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+                                <i class="fas fa-folder-open fa-3x "></i>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 align-self-center">
+                                My Projects
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="row mt-5 border">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+                                <i class="fas fa-keyboard fa-3x "></i>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 align-self-center">
+                                My Posts
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="row mt-5 border">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center">
+                                <i class="fas fa-user-friends fa-3x "></i>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6 align-self-center">
+                                My Friends
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
 
             </div>
 
-            <!--middle column-->
-            <div class="flex-child form_container w-col col-lg-10 col-md-12 col-sm-12">
+
+
+            <div class="middleColGeneral col-lg-8 col-md-12 col-sm-12 col-12">
 
                 <div class="container-fluid d-flex justify-content-center">
                     <div class="card cardUserPost">
+
                         <div class="card-header text-center">
                             Create Post
                         </div>
@@ -72,123 +149,138 @@
                             <a href="#" class="btn btn-primary btn-block shareButton">Share</a>
                         </div>
                     </div>
-        
+
                 </div>
 
-                
-                <div class="scroll_post_container ">
-                    <body>
 
-                        <div class="container-fluid d-flex justify-content-center">
-                            <div class="card cardGeneralPost">
-                                <div class="card-header text-start">
-                                    <div>
-                                        Gabriel Jones
-                                    </div>
-                                    <div>
-                                        2/25/2021
-                                    </div>
-                                </div>
-                
-                                <div class="card-body">
-                
-                
-                                    <p class="card-text">
-                                        When life gives you lemonade, make lemons
-                                    </p>
-                
-                                    <div class="d-flex justify-content-center">
-                                        <img src="images/userPosts/coral1.jpg" width="480px" height="480px" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                
-                                <div class="card-footer d-flex justify-content-center">
-                                    <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
-                                    <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
-                                    <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
-                                </div>
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="card cardGeneralPost">
+                        <div class="card-header text-start">
+                            <div>
+                                Gabriel Jones
+                            </div>
+                            <div>
+                                2/25/2021
                             </div>
                         </div>
-                
-                
-                        <div class="container-fluid d-flex justify-content-center">
-                            <div class="card cardGeneralPost">
-                                <div class="card-header text-start">
-                                    <div>
-                                        Paul Guszak
-                                    </div>
-                                    <div>
-                                        2/25/2021
-                                    </div>
-                                </div>
-                
-                                <div class="card-body">
-                
-                
-                                    <p class="card-text">
-                                        Im having an allergic reaction to pain
-                                    </p>
-                                </div>
-                
-                                <div class="card-footer d-flex justify-content-center">
-                                    <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
-                                    <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
-                                    <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
-                                </div>
+
+                        <div class="card-body">
+
+
+                            <p class="card-text">
+                                When life gives you lemonade, make lemons
+                            </p>
+
+                            <div class="d-flex justify-content-center">
+                                <img src="images/userPosts/coral1.jpg" width="480px" height="480px" class="img-fluid"
+                                    alt="">
                             </div>
-                
                         </div>
-                
-                    </body>
 
+                        <div class="card-footer d-flex justify-content-center">
+                            <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
+                            <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                        </div>
+                    </div>
 
-
-
-
-                    
                 </div>
+
+
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="card cardGeneralPost">
+                        <div class="card-header text-start">
+                            <div>
+                                Paul Guszak
+                            </div>
+                            <div>
+                                2/25/2021
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+
+
+                            <p class="card-text">
+                                Im having an allergic reaction to pain
+                            </p>
+                        </div>
+
+                        <div class="card-footer d-flex justify-content-center">
+                            <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
+                            <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="card cardGeneralPost">
+                        <div class="card-header text-start">
+                            <div>
+                                Cesar Ramirez (ME)
+                            </div>
+                            <div>
+                                2/26/2021
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+
+
+                            <p class="card-text">
+                                How do I center align things?
+                            </p>
+                        </div>
+
+                        <div class="card-footer d-flex justify-content-center">
+                            <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
+                            <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-fluid d-flex justify-content-center">
+                    <div class="card cardGeneralPost">
+                        <div class="card-header text-start">
+                            <div>
+                                Cesar Ramirez (ME)
+                            </div>
+                            <div>
+                                2/26/2021
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+
+
+                            <p class="card-text">
+                                Nvm figured it out!
+                            </p>
+                        </div>
+
+                        <div class="card-footer d-flex justify-content-center">
+                            <a href="" class="card-link"><i class="fas fa-heart"></i> Like</a>
+                            <a href="" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <!--Profile box (right)-->
-            <div class="flex-child form_container w-col col-lg-2">
-                <div class="flex-container w-row">
 
-                    <!--Left column-->
-                    <div style="color:black; top: 12.5%;" class=" w-col col-lg-10 ">
-                        <ul style="list-style-type:none; padding-left: 0%; margin-left: 0%; ">
-                            <li>
-                                Profile image button
-                            <li><br><br>
-                        </ul>
-                    </div>
-                    
-                    <!--Right Column-->
-                    <div class=" w-col setting_btn">
-                        <ul style="list-style-type:none; padding-left: 0%; margin-left: 0%;">
-                            <li>
-                                Settings image button
-                            </li><br><br>
-                            <!--all pictures to be icon-->
-                            <li>pictures</li><br><br>
-                            <li>Projects<li><br><br>
-                            <li>Gallery<li><br><br>
-                            <li>Posts</li>
-                        </ul>
-                    </div>
-        
-                </div>
-            </div>
         </div>
-
-
-
-
     </body>
+
 
 
     <!-- footer -->
     <footer class="footer">
-        Copyright @2021 Orbit - A CeRaTech, Subscorpion, Vivanator Collaberation
     </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
