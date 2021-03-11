@@ -4,7 +4,8 @@
 		<meta charset="utf-8" />
         <title>Orbit Sign Up</title>
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
 		<link rel="stylesheet" type= "text/css" href="/css/signup.css">
 		<style>
 			
@@ -12,9 +13,7 @@
 	</head>
 
 	<body>
-
-		<form>
-			
+		<form id="mainForm" onsubmit="return validateForm()" novalidate>
 			<div class="form_container">
 				<div style="text-align:center; padding-bottom: 10px;">
 					<img src="/images/OrbitBanner.png" alt="Lights" class="center resize">
@@ -22,25 +21,25 @@
 				
 				<div style="text-align:center; padding-bottom: 30px;">
 					<span class="span_header">Create Account</span>
-					<br>Fill in the following:
+					<br>Fill in the Following :<span style="color:red"> *Red Boxes Required*</span>
 				</div>
 
 				<!--First and Last-->
 				<div class="w-auto form-group row">
 					<!--First Name-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<input type="text" id="txtFirstname" name="txtFirstname" class="form-control entrybox"
+					<input type="text" id="txtFirstname" name="txtFirstname" class="form-control requiredEntry"
 						placeholder="First Name" required/>
 					</div>
 
 					<!--Last Name-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<input type="text" id="txtLastname" name="txtLastname" class="form-control entrybox"
+					<input type="text" id="txtLastname" name="txtLastname" class="form-control requiredEntry"
 						placeholder="Last Name" required/>
 					</div>
 				</div>
 				
-				<!--Gender and Email-->
+				<!--Gender and Location-->
 				<div class="w-auto form-group row">
 					<!--Gender-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -59,13 +58,13 @@
 				<div class="w-auto form-group row">
 					<!--Username-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<input type="text" id="txtuser" name="txtuser" class="form-control entrybox"
+					<input type="text" id="txtuser" name="txtuser" class="form-control requiredEntry"
 						placeholder="Username" required/>
 					</div>
 
 					<!--Email-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<input type="email" id="txtemail" name="txtemail" class="form-control entrybox"
+					<input type="email" id="txtemail" name="txtemail" class="form-control requiredEntry"
 						placeholder="Email" required/>
 					</div>
 				</div>  
@@ -74,21 +73,21 @@
 				<div class="w-auto form-group row">
 					<!--Pass-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<input type="text" id="txtPassword" name="txtPassword" class="form-control entrybox"
-						placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
-						onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); 
-						if(this.checkValidity()) form.confirmPassword.pattern = this.value;"/>
-
+						<input type="text" id="txtPassword" name="txtPassword" class=" form-control requiredEntry"
+							placeholder="Password" required/>
+							<!--onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); 
+							if(this.checkValidity()) form.confirmPassword.pattern = this.value;"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"-->
 					</div>
 
 					<!--Confirm Pass-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<input type="password" id="confirmPassword" name="confirmPassword" class="form-control entrybox"
-						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-						onchange="this.setCustomValidity(this.validity.patternMismatch ?
-						'Your passwords do not match' : '');" placeholder="Verify Password"/>
+						<input type="password" id="confirmPassword" name="confirmPassword" class=" form-control requiredEntry"
+							placeholder="Verify Password" required/>
+							<!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+							onchange="this.setCustomValidity(this.validity.patternMismatch ?
+							'Your passwords do not match' : '');" />-->
 					</div>
-				</div>  
+				</div>
 				
 				<!--DOB-->
 				<div style="position:relative; left:55px;" class="form-group row">
@@ -96,9 +95,9 @@
 						<span style="font-size: 15px;">Date of Birth:</span>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<input type="date" id="DateDOB" name="txtgender" class="form-control entrybox"/>
+						<input type="date" id="DateDOB" name="txtgender" class="form-control requiredEntry"/>
 					</div>
-				</div>  
+				</div>
 
 
 				<!--BIO Entry-->
@@ -118,48 +117,54 @@
 						</label>
 					</div>
 					
+					<!--Question 1-->
 					<div class="w-auto form-group row">
 						<div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">  
-							<select id="Security1" name="Security1" class="form-control entrybox">
-							<option value="Maiden_Name" selected>What is your mothers' maiden name?</option>
+							<select id="Security1" name="Security1" class="form-control requiredEntry" onchange="securitychange1()">
+							<option value="NoValid" selected>Select a question</option>
+							<option value="Maiden_Name">What is your mothers' maiden name?</option>
 							<option value="First_Car">What is the make of your first car?</option>
 							</select>
 						</div>
 		
 						
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<input type="text" id="txtSecurity1" name="txtSecurity1" class="form-control entrybox"
-							placeholder="Security Question: 1"/>
+						<div id="diTxtvSecurity1" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 invisible">
+							<input type="text" id="textSecurity1" name="textSecurity1" class="form-control requiredEntry"
+							placeholder="Security Question 1 Answer"/>
 						</div>
 					</div> 
 
+					<!--Question 2-->
 					<div class="w-auto form-group row">
-						<div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">  
-							<select id="Security2" name="Security2" class="form-control entrybox">
-							<option value="Birth_City" selected>What city were your born in?</option>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">  
+							<select id="Security2" name="Security2" class="form-control requiredEntry" onchange="securitychange2()">
+							<option value="NoValid" selected>Select a question</option>
+							<option value="Birth_City" >What city were your born in?</option>
 							<option value="First_Concert">What was the first Concert you attended?</option>
 							</select>
 						</div>
 		
 						
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<input type="text" id="textSecurity2" name="textSecurity2" class="form-control entrybox"
-							placeholder="Security Question: 2"/>
+						<div id="divSecurity2" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 invisible">
+							<input type="text" id="textSecurity2" name="textSecurity2" class="form-control requiredEntry"
+							placeholder="Security Question 2 Answer"/>
 						</div>
 					</div> 
 
+					<!--Question 3-->
 					<div class="w-auto form-group row">
 						<div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">  
-							<select id="Security3" name="Security3" class="form-control entrybox">
-							<option value="first_video_game" selected>What is the first video game you played?</option>
+							<select id="Security3" name="Security3" class="form-control requiredEntry" onchange="securitychange3()">
+							<option value="NoValid" selected>Select a question</option>
+							<option value="first_video_game">What is the first video game you played?</option>
 							<option value="First_elementary_school">What elementary school did you attend?</option>
 							</select>
 						</div>
 		
 						
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<input type="text" id="textSecurity3" name="textSecurity3" class="form-control entrybox"
-							placeholder="Security Question: 3"/>
+						<div id="divSecurity3" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 invisible">
+							<input type="text" id="textSecurity3" name="textSecurity3" class="form-control requiredEntry"
+							placeholder="Security Question 2 Answer"/>
 						</div>
 					</div> 
 				</div>
@@ -170,15 +175,21 @@
 						<div class="btn-container" id="menu">
 							<ul class ="list">
 								<li>
-									<input style="left: -50px; width: 18%" type="submit" class="btn-inline submit-button"  name="Signup" value="Sign Up">
+									<input style="left: -50px; width: 18%" type="submit" class="btn-inline submit-button"
+									  name="Signup" value="Sign Up">
 								</li>
 								<li>
-									<input style="width: 18%" type="reset" class="submit-button btn-inline" name="Reset" value="Reset">
+									<input style="width: 18%" type="reset" class="submit-button btn-inline" 
+									name="Reset" value="Reset">
 								</li>
 							</ul>
 						</div>
 					</ul>
 				</div>
+
+				<div id="submitError" class="errorMessage invisible">There needs to be a lower case letter in the passwod</div>
+				<!--style="overflow: scroll;"-->
+
 			
 			</div>
 		</form>
@@ -189,6 +200,7 @@
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/signup.js"></script>
 	</body>
 
 </html>

@@ -39,12 +39,53 @@ img.resize {
 
 
 /*user entry boxes */
+.test{
+    background-color: orange;
+}
+
+.hasError{
+    background-color: yellow;
+}
+
+.errorMessage{
+    color:red;
+    text-align: center;
+}
+
+.invisible{
+    display: none;
+}
+
+.requiredEntry{
+    border:none; 
+    border-radius: 10px;
+    padding: 7px 0px;
+    text-align: center; 
+    box-shadow: 0 0 3px 0 red;
+}
+
+.requiredEntry:hover{
+    box-shadow: 0 0 10px 0 red;
+}
+
+.requiredEntry:focus{
+    box-shadow: 0 0 6px 0 red;
+}
+
 .entrybox{
     border:none; 
     border-radius: 10px;
     padding: 7px 0px;
     text-align: center; 
     box-shadow: 0 0 3px 0 #000;
+}
+
+.entrybox:hover{
+    box-shadow: 0 0 10px 0 #000;
+}
+
+.entrybox:focus{
+    box-shadow: 0 0 6px 0 #000;
 }
 
 .centertext{
